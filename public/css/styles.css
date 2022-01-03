@@ -1,0 +1,972 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+.box {
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+  ;
+   
+    /* min-height: 200px;
+    width: 50vw; */
+    margin: 0 auto;
+    background: white;
+    border-radius: 5px;
+  }
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 300;
+    top: 0;
+    left: 0;
+    background-color: #F3EFEE;
+    background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+    /* background-image: url("https://www.transparenttextures.com/patterns/flowers.png"); */
+    color: #666;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: black;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .navbar__icon {
+      z-index: 100;
+  }
+
+  .navbar__icon span {
+    font-size:50px;
+    cursor:pointer; 
+    display: inline;
+    /* background-color: white;  */
+    text-shadow: 2px 2px white;
+    /* border-radius: 0 0 0 10px; */
+    padding: 5px; 
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+p {
+}
+
+h1 {
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+
+
+h2, h3, h4 {
+    color: #1d3557;
+}
+
+.btnL {
+    border: 0;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.btnR {
+    background-color: transparent;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.magical__nav {
+    background-repeat: no-repeat;
+    background-position: 0 88%;
+    background-image: linear-gradient(120deg, #5981B3 0%, #5981B3 100%);
+    padding: 10px;
+    background-size: 100% 0.2em;
+    border-radius: 5px;
+    transition: background-size 0.25s ease-in;
+}
+
+.magical__nav:hover {
+    background-size: 100% 88%;
+
+}
+
+
+
+.underline--magical {
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    transition: background-size 0.25s ease-in;
+}
+
+
+.underline--tour {
+    background-image: linear-gradient(120deg, #EEB67E 0%, #856F64 100%);
+}
+
+.underline--about {
+    background-image: linear-gradient(120deg, #734A1D 0%, #DFBA89 100%);
+}
+    
+.underline--magical:hover {
+      background-size: 100% 88%;
+}
+
+.underline--food {
+    background-image: linear-gradient(120deg, #DD2A1E 0%, #E9A417 100%);
+}
+
+
+
+
+
+.pages__heading {
+    color: white;
+    /* text-shadow: 2px 1px black; */
+}
+
+/* #225582
+#674F31 */
+
+.home__contactbtn {
+    padding: 10px 30px;
+    color: white;
+    border-radius: 0%;
+    color: none;
+    border: 2px double white;
+    letter-spacing: 2px;
+    box-shadow: 0px 0px 3px white;
+}
+
+.home__contactbtn:hover {
+    color: black;
+    border-color: white;
+    background-color: white;
+}
+
+
+/* NAVBAR */
+
+/* #navbar {
+    z-index: 100;
+    background-color: white;
+    background-image: url("https://www.transparenttextures.com/patterns/flowers.png");
+    color: #666;
+}
+
+.navbar {
+    z-index: 100;
+}
+
+.navbar ul {
+    border-radius: 5px;
+}
+.mnav {
+    background-color: none;
+    transition-delay: 2s!important;
+} */
+
+/* .mnav.active {
+    background-color: #f1faee;
+    z-index: 10!important;
+    transition: 0.5s!important;
+} */
+
+.navbar__logoimg {
+    padding: 0;
+    height: 110px;
+    width: auto;
+    z-index: 200;
+}
+
+
+
+.card {
+    background-color: #f1faee;
+    /* box-shadow:  2px 2px 15px #666; */
+}
+
+
+/* HOME PAGE STYLING */
+
+.home::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .5;
+    z-index: 0;
+}
+
+/* #2D4066 */
+
+.home {
+    background-image: url('/photos/Background/home-cst-pic.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    /* height: 795px; */
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.home__logo {
+    height: 250px;
+}
+
+.home>* {
+    z-index: 10;
+    position: relative;
+}
+
+.home__caption {
+    /* color: black; */
+    color: white;
+    text-align: center;
+    width: 60%;
+}
+
+.home__caption>h1 {
+    font-size: 3.5rem;
+    font-weight: lighter;
+}
+
+.home__title {
+    background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
+}
+
+.home__title__content {
+    padding: 30px;
+    padding-top: 170px;
+}
+
+.home__benefits__content {
+    background-color: #CACFD3;
+    padding-top: 70px;
+    padding-bottom: 250px;
+    /* background-image: url("https://www.transparenttextures.com/patterns/always-grey.png"); */
+}
+
+.home__title p {
+    color: #666;
+}
+
+.home__exploretext {
+    color: #666;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.home__carousel {
+    padding-top: 190px;
+    /* background-color: #979dac; */
+    padding-bottom: 400px;
+}
+
+.home__img {
+    height: 220px;
+}
+
+.home__captionButton {
+    color: white;
+    font-weight: bold;
+    width: 40%;
+    /* background-color: #3797C9; */
+    background-color: #18181A;
+    border-color: #18181A;
+    padding: 12px;
+}
+
+.home__captionButton:hover {
+    color: white;
+    background-color: #18181A;
+    border-color: #18181A;
+}
+
+.homeCard__btn {
+    background-color: #3797C9;
+    padding: 10 12px;
+}
+
+.homeCard__link {
+    color: white;
+}
+
+.homeCard__link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.home__card {
+    border: none;
+}
+
+
+/* testimonial carousel styling  */
+
+
+#testimonials {
+    padding-top: 200px;
+    padding-bottom: 250px;
+    background-color: #5c677d;
+    background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+}
+
+#testimonials .card {
+    padding: 20px;
+    background-color: #002855;
+    color: #979dac;
+}
+
+.carousel-caption {
+    position: static;
+}
+
+#carousel-inner-testimonials {
+    height: 500px;
+}
+
+.testimonials-inner {
+    
+    /* background-color: #002855; */
+    line-height: 1.7;
+    /* background-image: url("https://www.transparenttextures.com/patterns/dimension.png"); */
+}
+.testimonials__profile-pic img {
+    height: 100px;
+    border-radius: 50%;
+}
+
+.carousel-control-prev {
+    color: black;
+}
+
+.carousel-caption>p {
+    color: #979dac;
+    width: 60%;
+    margin: 0px auto 0 auto;
+}
+
+
+ /* #carouselExampleIndicators {
+    margin-top: 180px;
+    background-color: #343a40;
+    background-image: url("https://www.transparenttextures.com/patterns/dimension.png");
+    height: 500px;
+} */
+
+
+
+/* TOUR  */
+/* #B17651
+#5B0E0B
+#827776 */
+
+.tour {
+    background-image: url('/photos/Background/bg8.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.tour__page {
+    /* background-color: #3a606e; */
+    background-color: #eee;
+    padding-bottom: 50px;
+}
+
+.tour__heading {
+    background-color: #76939B;
+    padding-top: 150px;
+    margin-bottom: 100px;
+    padding-bottom: 150px;
+    background-image: url('https://www.transparenttextures.com/patterns/brilliant.png');
+    color: #355764;
+}
+
+.tour__page .card {
+    background-color: transparent;
+    border: 0;
+}
+
+.tour__page h2 {
+    color: #050a0c;
+}
+
+.tour__page h3 {
+    color: #121212;
+}
+
+
+.tour__img {
+    /* width: 230px;
+    height: 170px;
+    border-radius: 5px; */
+    height: 250px;
+    width: auto;
+}
+
+.tour__collage {
+    width: 380px;
+    height: 370px;
+}
+
+.tour__otherPlaces {
+    padding-top: 100px;
+    background-color: #131312;
+    padding-bottom: 50px;
+    color: #eee;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tour__otherPlaces h2 {
+    color: #76939B;
+}
+
+
+.tour__end {
+    /* background-color: #76939B; */
+    background-color: #eee;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.tour__link {
+    color: #eee;
+}
+
+.tour__link:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.tour__container {
+    margin-bottom: 40px;
+}
+
+.tour__container h5 {
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+
+
+
+/* eachTourPlace  */
+
+.eachTourPlace {
+    padding-top: 200px;
+    background-color: #89c2d9;
+    background-image: url("https://www.transparenttextures.com/patterns/climpek.png");
+    padding-bottom: 100px;
+}
+
+.eachTourPlace h1 {
+    
+    color: #014f86;
+}
+
+.eachTourPlace__img {
+    width: 420px;
+    height: 400px;
+}
+
+
+/* SPA  */
+/* #DF9CC7 pink
+#E2669C pink
+#BFB9BC white
+#FDF9DC fire
+#FDF9DC  */
+
+#spa {
+    background-image: url('/photos/Spa/spabg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #BFB9BC;
+    text-shadow: 1px 1px black;
+}
+
+#spa h1 {
+    padding: 20px;
+}
+
+.spa__page h3 {
+    color: #ff477e;
+}
+
+.spa__page {
+    padding: 20px;
+}
+
+.spa__container {
+    /* background-color: #CBCCC6; */
+    background-color: #faf9f9;
+background-image: url("https://www.transparenttextures.com/theme/images/transparent.png");
+}
+
+
+.spa__heading p {
+    color: black;
+}
+
+.spa__page .card {
+    background-color: #fae0e4;
+    border: 0;
+    background-image: url("https://www.transparenttextures.com/patterns/pinstripe-light.png");
+}
+
+.spa-contact {
+    margin-top: 100px;
+    
+    background-color: #fae0e4;
+    padding: 100px;
+    background-image: url("https://www.transparenttextures.com/patterns/crissxcross.png");
+}
+
+
+/* ABOUT US PAGE STYLING */
+
+/* #DFBA89
+#734A1D
+#F3EFEE
+#F7F0EA
+#CC9901 yellow */
+
+.about {
+    background-image: url('/photos/About/about.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__personal__container {
+    background-color: #F3EFEE;
+    background-image: url("https://www.transparenttextures.com/patterns/climpek.png");
+}
+
+
+.about__para {
+    width: 80%;
+    margin: auto;
+}
+
+.about-para-contain {
+    padding: 30px;
+}
+
+
+.btnR:hover, .btnL:hover {
+    opacity: 0.9;
+}
+
+.about__image {
+    margin-top: 200px;
+}
+
+.about__help {
+    margin-top: 130px;
+}
+
+.aboutus {
+    margin-top: 100px;
+}
+
+.aboutus h3 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #666;
+}
+
+.aboutus h6 {
+    letter-spacing: 2px;
+}
+
+
+
+/* CONTACT PAGE STYLING */
+/* #f4f1bb
+#ed6a5a
+#5ca4a9
+#e6ebe0 */
+.contact__page {
+    padding-bottom: 100px;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/blizzard.png");
+}
+
+.contact__page label {
+    color: #003459;
+}
+
+.contact__page h2 {
+    color: #ffffff;
+    letter-spacing: 4px;
+}
+
+
+.contact__page a {
+    color: #394989;
+}
+
+.contact__page__btn b {
+    color: #007ea7;
+}
+
+.contact-heading {
+    font-weight: bolder;
+    background-color: #6f4a8e;
+    /* background-image: url("https://www.transparenttextures.com/patterns/xv.png"); */
+    /* background-image: url("https://www.transparenttextures.com/patterns/vichy.png"); */
+    letter-spacing: 2px;
+    color: #fff48f;
+    padding: 20px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.contact__page__btn {
+    padding: 10px 20px;
+    color: white;
+    background-color: #6f4a8e;
+    border-radius: 5px;
+    border: 0;
+}
+
+.contact__page__btn:hover {
+    
+    background-color: #394989;
+}
+
+.contact-details {
+    /* background-color: #3797C9; */
+    margin-top: 200px;
+    /* border: 1px solid lightgray; */
+    padding: 20px;
+    color: #6f4a8e;
+}
+
+.contact-details img {
+    height: 50px;
+}
+
+.special-button {
+    font-size: 20px;
+    width: 10rem;
+    border-radius: 50px;
+    background-color: #ffffff;
+    border-top: 0px solid;
+    box-shadow: 5px 5px 20px #ffffff;
+}
+
+
+
+.contact__left p {
+    margin: 0;
+}
+
+.contact__form {
+    width: 90%;
+    margin: auto;
+}
+
+.success__message {
+    display: none;
+}
+
+.failure__message {
+    display: none;
+}
+
+/* food page styling */
+/* #DD2A1E
+#D9651F
+#627717
+#DF9D19
+#0B151E (black) */
+
+#food {
+    background-image: url('/photos/Food/foodbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#food h1 {
+    padding: 20px;
+    text-shadow: 1px 1px black;
+
+}
+
+.food {
+    background-color: #B79578;
+    background-image: url("https://www.transparenttextures.com/patterns/paper-3.png");
+    
+}
+
+.food h3, h6 {
+    color: #0B151E;
+}
+
+
+
+
+/* FOOTER STYLING  */
+
+#footer {
+    background-color: black;
+    /* background-image: url("https://www.transparenttextures.com/patterns/flowers.png"); */
+    text-align: left;
+    height: auto;
+}
+
+#footer a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: darkgray;
+}
+
+#footer i {
+    color: #999;
+}
+
+#footer i:hover {
+    color: darkgray;
+}
+
+.footer--headline {
+    letter-spacing: 4px;
+}
+
+.footer-data {
+    text-align: left;
+    padding: 50px 60px;
+}
+
+.footer-data>p {
+    margin: 3px;
+    color: #adb5bd;
+}
+
+.fa_custom {
+    color: black;
+    padding: 4px;
+}
+
+.footer-copyright {
+    text-align: center;
+    padding: 15px 50px;
+}
+
+
+.footer-copyright p {
+    color: grey;
+    margin-bottom: 0;
+}
+
+
+@media only screen and (max-width: 900px) {
+    #navbar {
+        background-color: transparent;
+    }
+
+    .navbar__icon span {
+        right: 10px;
+      }
+    .navbar__logoimg {
+        height: 100px;
+        width: auto;
+    }
+    .nav__btn {
+        padding: 10px;
+    }
+    /* HOME PAGE STYLING */
+    .home {
+        background-image: url('/photos/Background/home-cst-pic.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        position: relative;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home .pages__heading {
+        font-size: 30px;
+    }
+    .home__title__content {
+        padding: 10px;
+        padding-top: 100px;
+    }
+    .home__title h3 {
+        font-size: 30px;
+    }
+    .home__caption {
+        color: white;
+        width: 80%;
+        margin: 30px auto 0;
+    }
+    .home__caption>h1 {
+        font-size: 2rem;
+    }
+    /* testimonial carousel styling  */
+    
+    .carousel-caption {
+        position: static;
+    }
+    #carousel-inner-testimonials {
+        height: 770px;
+        padding: 50px;
+        font-size: small;
+    }
+    .carousel-control-prev {
+        color: black;
+    }
+    .carousel-caption>p {
+        color: white;
+        width: auto;
+        margin: 10px auto 0 auto;
+    }
+
+    
+   .spa-contact {
+        margin-top: 100px;
+        background-color: #fae0e4;
+        padding: 20px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-image: url("https://www.transparenttextures.com/patterns/crissxcross.png");
+    }
+
+    .spa-contact h5 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .contact__left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+    }
+    .tour__container {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .tour__container h5 {
+        text-align: center;
+    }
+    .tour__container>div {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .tour__img {
+        width: 100%;
+    }
+    .tour__collage {
+        text-align: center;
+        width: auto;
+        height: 300px;
+    }
+    .eachTourPlace__img {
+        width: auto;
+        height: 250px;
+    }
+    .contact__left>div {
+        text-align: center;
+    }
+    .contact__left>div>div {
+        margin: 50px 0;
+    }
+    .contact__form {
+        width: auto;
+        margin: auto;
+    }
+    .food h1 {
+        width: 100%;
+    }
+    .food__img img {
+        height: 130px;
+    }
+    .food__img1 {
+        left: 0;
+    }
+    .food__img3 {
+        right: 0;
+    }
+    .menu__content p {
+        width: 100%;
+    }
+}
